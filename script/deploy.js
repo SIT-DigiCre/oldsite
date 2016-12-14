@@ -11,7 +11,8 @@ ghpages.publish(
             name: "sh4869",
             email: "nobuk4869@gmail.com",
         },
-        message: "[ci skip] UPDATEE WEBPAGE"
+        message: "[ci skip] UPDATEE WEBPAGE",
+        branch: "master"
     },
     function (err) {
         if(err){
