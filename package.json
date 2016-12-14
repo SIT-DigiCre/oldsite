@@ -1,0 +1,19 @@
+{
+  "name": "sit-digicre.github.io",
+  "version": "0.1.0",
+  "description": "SIT-Digicre GitHub Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIT-DigiCre/SIT-Digicre.github.io.git"
+  },
+  "author": "sh4869 <nobuk4869@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SIT-DigiCre/SIT-Digicre.github.io/issues"
+  },
+  "homepage": "https://github.com/SIT-DigiCre/SIT-Digicre.github.io#readme"
+}
