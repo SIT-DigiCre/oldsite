@@ -4,7 +4,7 @@ const path = require("path");
 const GH_TOKEN = process.env.GH_TOKEN;
 
 ghpages.publish(
-    path.join(__dirname, '..', 'www'),
+    path.join(__dirname, '..', 'dest'),
     {
         repo: 'https://' + GH_TOKEN + '@github.com/SIT-Digicre/SIT-Digicre.github.io',
         user: {

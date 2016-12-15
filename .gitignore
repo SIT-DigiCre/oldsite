@@ -52,4 +52,4 @@ jspm_packages
 
 # Don't include generated files.
 
-www/*.html
+dest/
