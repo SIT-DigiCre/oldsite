@@ -15,7 +15,7 @@
     "watch:gulp": "gulp watch",
     "watch:server": "ws",
     "start": "npm-run-all -p watch:*",
-    "deploy": "npm run build && node script/deploy.js"
+    "deploy": "npm run build && node scripts/deploy.js"
   },
   "repository": {
     "type": "git",
