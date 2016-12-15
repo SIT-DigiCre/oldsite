@@ -49,3 +49,7 @@ jspm_packages
 
 # Yarn Integrity file
 .yarn-integrity
+
+# Don't include generated files.
+
+www/*.html

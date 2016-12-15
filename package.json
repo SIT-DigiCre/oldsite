@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "build:statics": "gulp build",
     "deploy": "node script/deploy.js"
   },
   "repository": {
@@ -19,6 +21,10 @@
   "homepage": "https://github.com/SIT-DigiCre/SIT-Digicre.github.io#readme",
   "devDependencies": {
     "gh-pages": "^0.12.0",
-    "path": "^0.12.7"
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.2.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta6"
   }
 }
