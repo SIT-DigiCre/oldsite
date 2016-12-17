@@ -6,7 +6,8 @@
   "local-web-server": {
     "port": 8100,
     "forbid": "*.json",
-    "no-cache": true
+    "no-cache": true,
+    "directory": "dest/"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,10 +33,15 @@
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.2.0",
+    "gulp-rework": "^1.2.0",
     "gulp-sass": "^3.0.0",
     "local-web-server": "^1.2.6",
     "npm-run-all": "^3.1.2",
     "path": "^0.12.7",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta6",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
   }
 }
