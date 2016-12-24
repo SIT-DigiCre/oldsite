@@ -12,7 +12,7 @@ gulp.task('pug', () => {
     gulp.src("www/pug/**/*.pug", { base: "www/pug/" })
         .pipe(plumber({
             errorHandler: (err) => {
-                console.log(err.msg);
+                console.log(err);
             }
         }))
         .pipe(data(
@@ -39,18 +39,24 @@ gulp.task("css", () => {
     return gulp.src("www/scss/index.scss", { "base": "www/scss" })
         .pipe(plumber({
             errorHandler: (err) => {
-                console.log(err.msg);
+                console.log(err);
             }
         }))
         .pipe(sass({ outputStyle: 'expanded', importer: moduleImporter() }).on('error', sass.logError))
         .pipe(gulp.dest("dest/css/"));
 });
+
 gulp.task("font",() => {
     return gulp.src("node_modules/font-awesome/fonts/*")
         .pipe(gulp.dest("dest/fonts/"));
 });
 
-gulp.task("build", ["img", "pug", "css","font"], () => {
+gulp.task("cname",() => {
+    return gulp.src("www/CNAME")
+        .pipe(gulp.dest("dest/"));
+})
+
+gulp.task("build", ["img", "pug", "css","font","cname"], () => {
 
 });
 
