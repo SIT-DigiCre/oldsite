@@ -12,7 +12,7 @@ gulp.task('pug', () => {
     gulp.src("www/pug/**/*.pug", { base: "www/pug/" })
         .pipe(plumber({
             errorHandler: (err) => {
-                console.log(err);
+                console.log(err.msg);
             }
         }))
         .pipe(data(
@@ -39,7 +39,7 @@ gulp.task("css", () => {
     return gulp.src("www/scss/index.scss", { "base": "www/scss" })
         .pipe(plumber({
             errorHandler: (err) => {
-                console.log(err);
+                console.log(err.msg);
             }
         }))
         .pipe(sass({ outputStyle: 'expanded', importer: moduleImporter() }).on('error', sass.logError))
