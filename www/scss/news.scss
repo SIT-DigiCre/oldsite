@@ -1,0 +1,20 @@
+@import "./variables.scss";
+#news {
+  background: #99d0cd;
+  .news-area {
+    border-bottom: rgba(79, 115, 243, 0.58) solid 1px;
+    &:last-child {
+      border: none;
+    }
+    p {
+      &.news-title {
+        font-weight: 500;
+        margin-left: 0.5em;
+      }
+      &.news-date {
+        margin-left: 0.5em;
+        font-size: 1em;
+      }
+    }
+  }
+}

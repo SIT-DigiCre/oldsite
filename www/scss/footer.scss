@@ -1,0 +1,28 @@
+#footer {
+  background-color: #eee;
+  img.logo {
+    max-height: 124px;
+    margin: 0 auto;
+  }
+  .links {
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+    .link {
+      font-size: 1.2em;
+      margin-left: 1em;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      margin-bottom: 0.5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .copywrite {
+    margin: 0 auto;
+  }
+}
