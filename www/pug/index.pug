@@ -1,0 +1,96 @@
+- const datas = data
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="keyword",content="デジクリ,digicre,芝浦工業大学,shibaura institute tecnology,SIT")
+    meta(name="description",content="芝浦工業大学公認サークルデジクリの公式サイトです。")
+    meta(name="author",content="sh4869(nobuk4869@gmail.com)")
+    meta(content='IE=edge,chrome=1', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width,initial-scale=1.0, maximum-scale=1.0', name='viewport')
+    meta(content='text/html; charset=UTF-8', http-equiv='Content-Type')
+    title デジクリ - Digital Creation Circle
+    link(href="css/index.css", rel="stylesheet")
+  body
+    #top
+      .row
+        .col-sm-1.col-md-3.col-lg-2
+        .col-xs-12.col-sm-10.col-md-7.col-lg-8
+          .box
+            .top-img-area
+              img.logo(src="img/logo.png",alt="logo")
+        .col-sm-10.col-md-3.col-lg-2
+    #news
+      each news in data.news.slice(0,3)
+        .news-area
+          .row
+            .col-md-1
+            .col-xs-3.col-md-2
+              p.news-date= news.date
+            .col-xs-9.col-md-8
+              p.news-title= news.content
+            .col-xs-12.col-sm-12.col-md-1
+    #about
+      .row
+        .col-xs-12.col-md-2
+        .col-xs-12.col-md-8
+          .box
+            section.title
+              h1 Digital Creation Circle - デジクリ
+              .caption
+                p デジクリは、芝浦工業大学で活動する創作・発表サークルです。
+            .row.center-xs.center-md.descs-area
+              h2.area-title About
+              section.description
+                h2 What is Digicre
+                p デジタルクリエーションサークルデジクリは、芝浦工業大学に所属するデジタルクリエイションサークルです。ゲーム制作をはじめ、アプリケーション開発、イラスト製作、音楽製作、動画製作などデジタルメディアに関する創作を行っています。
+                p 主にCG班，DTM班，PG班の三つに分かれてそれぞれが協力し作品をつくります．また，一年に二回企画をたて制作物を発表するという特色もあります．
+              section.description
+                h2 Idea
+                .center
+                  p.bold より良い作品を作れるように日々努力して
+                  p.bold 自分の作品の発表をすることで、プレゼン能力を高め
+                  p.bold たのしく、他人にとって魅力ある作品を作れるように励むこと
+              section.description
+                h2 Activity
+                h3 企画作成・発表
+                p 一年に二回，メンバーが作成したいものを企画として発表し，メンバーと協力して完成させます．また，ものを作るだけでなく作ったものについてプレゼンテーションを行い，作品の評価をします．
+                h3 合宿
+                p 年に二回，技術継承と交流を目的として合宿を行います．合宿中には様々な講座が行われ，自らの技術を向上させることが出来ます．
+        .col-xs-12.col-sm-12.col-md-2
+    #contact
+      .row
+        .col-md-2
+        .col-xs-12.col-md-8
+          .box.contact-area
+            h2.area-title Contact
+            .row
+              .col-xs-12.col-md-6
+                .box.contact
+                  h3 連絡・質問等
+                  p デジクリに関するご質問・ご相談等はメールsitdigicre@gmail.comまでお願いします．また，Twitter(@sitdigicre)でのリプライやDM等でも受け付けております．お気軽にご連絡ください．
+              .col-xs-12.col-md-6
+                .box.contact
+                  h3 入部希望の方へ
+                  p 入部を希望される・より詳しい部活の紹介を聞きたい方は，メール・Twitterに加えて，直接芝浦工業大学大宮校舎にあるデジクリの部室にお越しいただくことも可能です．皆様のご参加をお待ちしております．
+        .col-md-2
+    #footer
+      .row
+        .col-xs-1.col-sm-1.col-md-2.col-lg-2
+        .col-xs-10.col-sm-10.col-md-4.col-lg-4
+          .box
+            img.logo(src="img/logo-black.png",alt="logo")
+        .col-xs-12.col-md-4
+          .box
+            .links
+              .link
+                i.fa.fa-twitter
+                a(href="https://twitter.com/sitdigicre",target="_blank")  @sitdigicre
+              .link
+                i.fa.fa-envelope-o
+                a(href="mail:sitdigicrecircle@gmail.com")  sitdigicrecircle@gmail.com
+        .col-xs-1.col-sm-1.col-md-2.col-lg-3
+      .row.center-xs.copywrite
+        p &copy; 2016 Digicre Shibaura Institute of Tecnology
+        
+        
