@@ -45,8 +45,12 @@ gulp.task("css", () => {
         .pipe(sass({ outputStyle: 'expanded', importer: moduleImporter() }).on('error', sass.logError))
         .pipe(gulp.dest("dest/css/"));
 });
+gulp.task("font",() => {
+    return gulp.src("node_modules/font-awesome/fonts/*")
+        .pipe(gulp.dest("dest/fonts/"));
+});
 
-gulp.task("build", ["img", "pug", "css"], () => {
+gulp.task("build", ["img", "pug", "css","font"], () => {
 
 });
 
