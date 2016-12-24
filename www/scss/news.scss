@@ -10,10 +10,30 @@
       &.news-title {
         font-weight: 500;
         margin-left: 0.5em;
+        @include md-screen {
+          margin-top: 0em;
+          margin-bottom: 0.3em;
+          margin-left: 2em;
+        }
+        @include xs-screen {
+          margin-top: 0em;
+          margin-bottom: 0.3em;
+          margin-left: 2em;
+        }
       }
       &.news-date {
         margin-left: 0.5em;
         font-size: 1em;
+        @include md-screen {
+          margin-top: 0.3em;
+          margin-bottom: 0.3em;
+          margin-left: 2em;
+        }
+        @include xs-screen {
+          margin-top: 0.3em;
+          margin-bottom: 0.3em;
+          margin-left: 2em;
+        }
       }
     }
   }
