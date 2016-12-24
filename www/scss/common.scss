@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/earlyaccess/mplus1p.css);
+body {
+  font-family: "Mplus 1p", "Noto Sans Japanese", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2.area-title {
+  text-align: left;
+  margin-left:1em;
+  width: 100%;
+}

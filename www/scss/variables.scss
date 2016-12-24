@@ -1,0 +1,31 @@
+// variables
+$sm-length: 48em;
+$md-length: 64em;
+$lg-length: 75em;
+@mixin xs-screen {
+    @media screen and (max-width: $sm-length) {
+        @content
+    }
+};
+
+@mixin sm-screen {
+    @media screen and (min-width: $sm-length) and (max-width: $md-length) {
+        @content
+    }
+};
+
+
+@mixin md-screen {
+    @media screen and (min-width: $md-length) and (max-width: $lg-length) {
+        @content
+    }
+};
+
+
+@mixin lg-screen {
+    @media screen and (min-width: $lg-length) {
+        @content
+    }
+}
+
+;

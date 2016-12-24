@@ -1,0 +1,51 @@
+@import "./variables.scss";
+#about {
+  background: #f5f5ff;
+  section.title {
+    margin: 2em 1em;
+    .caption {
+      text-align: center;
+      margin-bottom: 2em;
+      margin-right: 1em;
+      margin-left: 1em;
+    }
+  }
+  .descs-area {
+    margin-bottom: 2em;
+    section.description {
+      padding-right: 2em;
+      padding-left: 2em;
+      width: 100%;
+      h2 {
+        color: #17178e;
+      }
+      &:not(:last-child) {
+        border-bottom: 0.5px solid #aaa;
+      }
+      @include md-screen {
+        .center {
+          width: 60%;
+          margin: auto;
+        }
+      }
+      @include lg-screen {
+        .center {
+          width: 60%;
+          margin: auto;
+        }
+      }
+      p {
+        color: #000413;
+        text-align: left;
+        margin-top: 0em;
+        margin-bottom: 0;
+        &.bold {
+          font-weight: bold;
+        }
+        &:last-child {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
