@@ -4444,9 +4444,41 @@ h2.area-title {
   margin-left: 0.5em;
 }
 
+@media screen and (min-width: 64em) and (max-width: 75em) {
+  #news .news-area p.news-title {
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  #news .news-area p.news-title {
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 2em;
+  }
+}
+
 #news .news-area p.news-date {
   margin-left: 0.5em;
   font-size: 1em;
+}
+
+@media screen and (min-width: 64em) and (max-width: 75em) {
+  #news .news-area p.news-date {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 2em;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  #news .news-area p.news-date {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 2em;
+  }
 }
 
 #about {
