@@ -9,7 +9,7 @@ const moduleImporter = require("sass-module-importer");
 
 
 gulp.task('pug', () => {
-    gulp.src("www/pug/**/*.pug", { base: "www/pug/" })
+    gulp.src(["www/pug/**/*.pug","!www/pug/include/*.pug"], { base: "www/pug/" })
         .pipe(plumber({
             errorHandler: (err) => {
                 console.log(err);
@@ -51,12 +51,17 @@ gulp.task("font",() => {
         .pipe(gulp.dest("dest/fonts/"));
 });
 
+gulp.task("favicon",() => {
+    return gulp.src("www/favicon/*")
+        .pipe(gulp.dest("dest/favicon/"));
+})
+
 gulp.task("cname",() => {
     return gulp.src("www/CNAME")
         .pipe(gulp.dest("dest/"));
 })
 
-gulp.task("build", ["img", "pug", "css","font","cname"], () => {
+gulp.task("build", ["img", "pug", "css","font","cname","favicon"], () => {
 
 });
 
