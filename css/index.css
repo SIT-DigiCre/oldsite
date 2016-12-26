@@ -4444,6 +4444,10 @@ h2.area-title {
   margin-left: 0.5em;
 }
 
+#news .news-area p.news-title a {
+  color: black;
+}
+
 @media screen and (min-width: 64em) and (max-width: 75em) {
   #news .news-area p.news-title {
     margin-top: 0em;
