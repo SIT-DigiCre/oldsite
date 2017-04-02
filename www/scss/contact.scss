@@ -1,12 +1,29 @@
 #contact {
   background: #c6ffd4;
   .contact {
-    margin: auto;
-    width: 90%;
-    h3 {
-      text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding: 0.5em;
+    .title {
+      h3 {
+        font-weight: 500;
+        color: #005598;
+        i {
+          margin-right: 0.7em;
+        }
+      }
+    }
+    .content {
+      width: 90%;
+      margin: auto;
+      text-indent: 1em;
+      color: #000413;
+      text-align: left;
+      margin-top: 0em;
+      margin-bottom: 0;
     }
     margin-bottom: 2em;
-  
   }
 }

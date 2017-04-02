@@ -18,8 +18,14 @@ img {
   height: auto;
 }
 
-h2.area-title {
+h1.area-title {
   text-align: left;
-  margin-left:1em;
+  margin-left: 0.3em;
+  padding: 0.3em;
   width: 100%;
+  font-weight: 600;
+  i {
+    margin-right: 0.5em;
+  }
+  border-bottom: 1px solid black;
 }
