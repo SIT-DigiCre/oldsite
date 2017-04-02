@@ -4369,10 +4369,17 @@ img {
   height: auto;
 }
 
-h2.area-title {
+h1.area-title {
   text-align: left;
-  margin-left: 1em;
+  margin-left: 0.3em;
+  padding: 0.3em;
   width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+h1.area-title i {
+  margin-right: 0.5em;
 }
 
 #top {
@@ -4403,10 +4410,9 @@ h2.area-title {
   width: auto;
 }
 
-#top h2 {
-  font-weight: 300;
-  color: #e8e8e8;
-  text-align: right;
+#top .caption {
+  text-align: center;
+  color: white;
 }
 
 /*
@@ -4442,6 +4448,7 @@ h2.area-title {
 #news .news-area p.news-title {
   font-weight: 500;
   margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 #news .news-area p.news-title a {
@@ -4486,18 +4493,7 @@ h2.area-title {
 }
 
 #about {
-  background: #f5f5ff;
-}
-
-#about section.title {
-  margin: 2em 1em;
-}
-
-#about section.title .caption {
-  text-align: center;
-  margin-bottom: 2em;
-  margin-right: 1em;
-  margin-left: 1em;
+  background: #fff;
 }
 
 #about .descs-area {
@@ -4505,45 +4501,52 @@ h2.area-title {
 }
 
 #about .descs-area section.description {
-  padding-right: 2em;
-  padding-left: 2em;
-  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0.5em;
+  min-height: 200px;
 }
 
-#about .descs-area section.description h2 {
-  color: #17178e;
+#about .descs-area section.description .title {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-#about .descs-area section.description:not(:last-child) {
-  border-bottom: 0.5px solid #aaa;
+#about .descs-area section.description .title h3 {
+  color: #005598;
+  display: inline;
+  font-weight: 500;
 }
 
-@media screen and (min-width: 64em) and (max-width: 75em) {
-  #about .descs-area section.description .center {
-    width: 60%;
-    margin: auto;
-  }
+#about .descs-area section.description .title h3 i {
+  margin-right: 0.7em;
 }
 
-@media screen and (min-width: 75em) {
-  #about .descs-area section.description .center {
-    width: 60%;
-    margin: auto;
-  }
+#about .descs-area section.description .content {
+  width: 90%;
+  margin: 0 auto;
 }
 
-#about .descs-area section.description p {
+#about .descs-area section.description .content h4 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#about .descs-area section.description .content p {
+  text-indent: 1em;
   color: #000413;
   text-align: left;
   margin-top: 0em;
   margin-bottom: 0;
 }
 
-#about .descs-area section.description p.bold {
+#about .descs-area section.description .content p.bold {
   font-weight: bold;
 }
 
-#about .descs-area section.description p:last-child {
+#about .descs-area section.description .content p:last-child {
   margin-bottom: 1em;
 }
 
@@ -4552,13 +4555,31 @@ h2.area-title {
 }
 
 #contact .contact {
-  margin: auto;
-  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 0.5em;
   margin-bottom: 2em;
 }
 
-#contact .contact h3 {
-  text-align: center;
+#contact .contact .title h3 {
+  font-weight: 500;
+  color: #005598;
+}
+
+#contact .contact .title h3 i {
+  margin-right: 0.7em;
+}
+
+#contact .contact .content {
+  width: 90%;
+  margin: auto;
+  text-indent: 1em;
+  color: #000413;
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0;
 }
 
 #footer {
