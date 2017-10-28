@@ -71,4 +71,4 @@ gulp.task('watch', () => {
     gulp.watch(["www/img/**/*.png", "www/img/**/*.jpg"], ["img"])
 })
 
-gulp.task('default', ["watch"]);
+gulp.task('default', ["build","watch"]);
