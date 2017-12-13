@@ -4,7 +4,7 @@ const plumber = require("gulp-plumber");
 const pug = require("gulp-pug");
 const data = require("gulp-data");
 const sass = require("gulp-sass");
-const runSequence = require("run-sequence");
+const connect = require("gulp-connect")
 const moduleImporter = require("sass-module-importer");
 
 
@@ -17,17 +17,18 @@ gulp.task('pug', () => {
         }))
         .pipe(data(
             (file) => {
-                const dirname = __dirname + "/www/datas/";
+                const dirname = __dirname + "/www/data/";
                 const files = fs.readdirSync(dirname);
-                let datas = {};
+                let json = {};
                 files.forEach((name) => {
-                    datas[name.replace(".json", "")] = JSON.parse(fs.readFileSync(dirname + name));
+                    json[name.replace(".json", "")] = JSON.parse(fs.readFileSync(dirname + name));
                 });
-                return { data: datas };
+                return { data: json };
             })
         )
         .pipe(pug({ pretty: true }))
-        .pipe(gulp.dest("dest/"));
+        .pipe(gulp.dest("dest/"))
+        .pipe(connect.reload());
 })
 
 gulp.task("img", () => {
@@ -43,7 +44,8 @@ gulp.task("css", () => {
             }
         }))
         .pipe(sass({ outputStyle: 'expanded', importer: moduleImporter() }).on('error', sass.logError))
-        .pipe(gulp.dest("dest/css/"));
+        .pipe(gulp.dest("dest/css/"))
+        .pipe(connect.reload())
 });
 
 gulp.task("font",() => {
@@ -61,6 +63,14 @@ gulp.task("cname",() => {
         .pipe(gulp.dest("dest/"));
 })
 
+gulp.task("connect",() => {
+    connect.server({
+        root: "dest",
+        livereload: true,
+        port: 9000
+    });
+});
+
 gulp.task("build", ["img", "pug", "css","font","cname","favicon"], () => {
 
 });
@@ -71,4 +81,4 @@ gulp.task('watch', () => {
     gulp.watch(["www/img/**/*.png", "www/img/**/*.jpg"], ["img"])
 })
 
-gulp.task('default', ["build","watch"]);
+gulp.task('default', ["build","watch","connect"]);
