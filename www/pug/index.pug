@@ -31,7 +31,7 @@ html(lang="ja")
               img.logo(src="img/logo.png",alt="logo")
               img(src="img/desc.png",alt="desc")
             .caption
-              h2 デジクリは、「デジタルで創る」サークルです。  
+              h2 デジクリは、「アナログで創る」サークルです。
         .col-sm-10.col-md-3.col-lg-2
     #news
       each news in data.news.slice(0,3)
@@ -42,7 +42,7 @@ html(lang="ja")
               p.news-date= news.date
             .col-xs-12.col-md-8
               p.news-title!= news.content
-            .col-xs-12.col-sm-12.col-md-1         
+            .col-xs-12.col-sm-12.col-md-1
     #about
       .row
         .col-xs-12.col-md-2
@@ -57,7 +57,7 @@ html(lang="ja")
                   section.description
                     .title
                       h3
-                        i.fa.fa-question 
+                        i.fa.fa-question
                         | デジクリとは
                     .content
                       p <b>デジクリ</b>は、芝浦工業大学に所属する<b>デジタルクリエイションサークル</b>です。<b>ゲーム制作</b>をはじめ、アプリケーション開発、イラスト製作、音楽製作、動画製作などデジタルメディアに関する<b>創作</b>を行っています。
@@ -67,7 +67,18 @@ html(lang="ja")
                   section.description
                     .title
                       h3
-                        i.fa.fa-calendar 
+                        i.fa.fa-globe
+                        | 活動理念
+                    .content
+                      p より良い作品を作れるように日々努力し
+                      p 自分の作品の発表をすることで、プレゼン能力を高め
+                      p たのしく、他人にとって魅力ある作品を作れるように励むこと
+              .col-xs-12.col-md-6
+                .box
+                  section.description
+                    .title
+                      h3
+                        i.fa.fa-calendar
                         | 活動内容
                     .content
                       h4 企画作成・発表
@@ -79,20 +90,15 @@ html(lang="ja")
                   section.description
                     .title
                       h3
-                        i.fa.fa-globe
-                        | 活動理念
-                    .content
-                      p より良い作品を作れるように日々努力し
-                      p 自分の作品の発表をすることで、プレゼン能力を高め
-                      p たのしく、他人にとって魅力ある作品を作れるように励むこと                      
-              .col-xs-12.col-md-6
-                .box
-                  section.description
-                    .title
-                      h3 
                         i.fa.fa-trophy
                         | 活動実績
                     .content
+                      h4 デジゲー博2017に参加
+                      p 2017年11月12日に行われたデジゲー博2017に団体として有志の制作チームが参加し、ゲームアンソロジーを配布いたしました。
+                      p
+                        | 詳しくは
+                        a(href="http://digicre.net/digigame-expo-2017/")  特設サイト
+                        | をご覧ください。
                       h4 コミックマーケット91に参加
                       p 2017年12月29,30,31日に行われたコミックマーケット91に団体として参加し、イラスト集、CD、ゲーム、技術本等を配布いたしました。
                       p
@@ -107,14 +113,14 @@ html(lang="ja")
           .box.contact-area
             .row
               h1.area-title
-                i.fa.fa-info-circle 
+                i.fa.fa-info-circle
                 | Infomation
               .col-xs-12.col-md-6
                 .box
                   .contact
                     .title
                       h3
-                        i.fa.fa-reply 
+                        i.fa.fa-reply
                         | 連絡・質問等
                     .content
                       p デジクリに関するご質問・ご相談等はメールsitdigicrecircle@gmail.comまでお願いします。また、Twitter(@sitdigicre)でのリプライやDM等でも受け付けております。お気軽にご連絡ください。
@@ -122,7 +128,7 @@ html(lang="ja")
                 .box
                   .contact
                     .title
-                      h3 
+                      h3
                         i.fa.fa-sign-in
                         | 入部希望の方へ
                     .content
@@ -131,12 +137,12 @@ html(lang="ja")
                 .box
                   .contact
                     .title
-                      h3 
+                      h3
                         i.fa.fa-link
                         | 部員向けリンク
                     .content
                       ul
-                        li 
+                        li
                           a(href="http://wiki.digicre.net/",target="_blank") 部内Wiki
                         li
                           a(href="https://digicre-sit.slack.com",target="_blank") Slack
@@ -172,5 +178,3 @@ html(lang="ja")
         .col-xs-1.col-sm-1.col-md-2.col-lg-3
       .row.center-xs.copywrite
         p &copy; 2016 Digicre Shibaura Institute of Tecnology
-        
-        
