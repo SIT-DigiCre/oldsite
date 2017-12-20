@@ -4558,6 +4558,32 @@ h1.area-title i {
   margin-bottom: 1em;
 }
 
+#about .descs-area section.description.principles .content p {
+  margin-bottom: 10px;
+  text-decoration: underline wavy #d0ae20;
+}
+
+#about .descs-area section.description.principles .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .descs-area section.description.principles .content p::before {
+  margin-right: 3px;
+  font-family: Fontawesome;
+}
+
+#about .descs-area section.description.principles .content p:nth-child(1)::before {
+  content: "\f14e";
+}
+
+#about .descs-area section.description.principles .content p:nth-child(2)::before {
+  content: "\f0e6";
+}
+
+#about .descs-area section.description.principles .content p:nth-child(3)::before {
+  content: "\f25b";
+}
+
 #contact {
   background: #c6ffd4;
 }
