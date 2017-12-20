@@ -43,6 +43,31 @@
           }
         }
       }
+
+      &.principles {
+        .content {
+          p {
+            margin-bottom: 10px;
+            text-decoration: underline wavy #d0ae20;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &::before {
+              margin-right: 3px;
+              font-family: Fontawesome;
+            }
+            &:nth-child(1)::before {
+              content: "\f14e";
+            }
+            &:nth-child(2)::before {
+              content: "\f0e6";
+            }
+            &:nth-child(3)::before {
+              content: "\f25b";
+            }
+          }
+        }
+      }
     }
   }
 }
