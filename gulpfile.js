@@ -76,7 +76,7 @@ gulp.task("build", ["img", "pug", "css","font","cname","favicon"], () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch(["www/pug/**/*.pug","www/datas/**/*.json"], ["pug"]);
+    gulp.watch(["www/pug/**/*.pug","www/data/**/*.json"], ["pug"]);
     gulp.watch(["www/scss/**/*.scss"], ["css"]);
     gulp.watch(["www/img/**/*.png", "www/img/**/*.jpg"], ["img"])
 })
