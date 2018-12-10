@@ -5,6 +5,7 @@ html{
 }
 body {
   font-family: "Noto Sans Japanese", sans-serif;
+  line-height: 1.5em
 }
 
 h1,
@@ -30,7 +31,7 @@ h1.area-title {
   i {
     margin-right: 0.5em;
   }
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
 .row {
